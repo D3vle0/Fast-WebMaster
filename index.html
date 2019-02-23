@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WebMaster</title>
+</head>
+<style>
+    button {
+        border: 1px solid blue;
+        background: #313131;
+        color: #fff;
+        font-size: 25px;
+    }
+    p {
+        font-size: 30px;
+    }
+</style>
+<body>
+    <p>검색 서비스</p>
+    <button type="button" onclick="naver()">네이버</button><br><br>
+    <button type="button" onclick="google()">구글</button><br><br>
+    <p>바로가기</p>
+    <button type="button" onclick="tw()">트위터</button><br><br>
+    <button type="button" onclick="gh()">github</button><br><br>
+    <button type="button" onclick="devleo()">devleo.ga</button><br><br>
+    <button type="button" onclick="cedu()">c-edu.ga</button><br><br>
+
+</body>
+<script>
+    function naver() {
+        var naverurl="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=";
+        var input=prompt('검색어를 입력하세요.');
+        var url=naverurl.concat(input);
+        window.open(url, '_blank');
+    }
+    function google() {
+        var googleurl="https://www.google.com/search?q=";
+        var input=prompt('검색어를 입력하세요.');
+        var url=googleurl.concat(input);
+        window.open(url, '_blank');
+    }
+    function tw() {
+        window.open('https://twitter.com', '_blank');
+    }
+    function gh() {
+        window.open('https://github.com', '_blank');
+    }
+    function devleo() {
+        window.open('http://devleo.ga', '_blank');
+    }
+    function cedu() {
+        window.open('http://c-edu.ga', '_blank');
+    }
+</script>
+
+</html>
